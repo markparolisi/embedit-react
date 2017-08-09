@@ -1,0 +1,11 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css');
+
+figure {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+}
+
+figcaption {
+    text-overflow: ellipsis;
+}
