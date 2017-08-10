@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
 class QueryForm extends React.Component {
-
   handleSubmit(event) {
     event.preventDefault();
     let searchTerm = this._searchTerm.value;
@@ -15,10 +14,21 @@ class QueryForm extends React.Component {
           <form onSubmit={this.handleSubmit.bind(this)}>
             <div className="field has-addons">
               <div className="control">
-                <input type="text" placeholder="Search Term" ref={(input) => { this._searchTerm = input; }} className="input" />
+                <input
+                  type="text"
+                  placeholder="Search Term"
+                  ref={input => {
+                    this._searchTerm = input;
+                  }}
+                  className="input"
+                />
               </div>
               <div className="control">
-                <input type="submit" value="Search" className="button is-primary" />
+                <input
+                  type="submit"
+                  value="Search"
+                  className="button is-primary"
+                />
               </div>
             </div>
           </form>
