@@ -15,7 +15,7 @@ class App extends Component {
   _addEmbeds(searchTerm) {
     this.setState({ searchTerm: searchTerm });
     fetch(
-      "http://localhost:8080/media?q=" + searchTerm + "&services=imgur,giphy"
+      "https://embedit-node.herokuapp.com/media?q=" + searchTerm + "&services=imgur,giphy"
     )
       .then(res => res.json())
       .then(data => {
